@@ -27,7 +27,7 @@ const AppWrapper = ({ Component, pageProps }: any) => {
 
     const func = async () => {
       const { data } = await axios.get(
-        "https://ham-bubble-bot-be.onrender.com/tasks"
+        "/tasks"
       );
       dispatch(setTasks(data));
     };

@@ -99,7 +99,7 @@ export default function Index() {
     if (userFromQuery) {
       const func = async () => {
         const { data } = await axios.post(
-          "https://ham-bubble-bot-be.onrender.com/users",
+          "/users",
           {
             user: userFromQuery,
           }
@@ -114,7 +114,7 @@ export default function Index() {
     const fetchData = async () => {
       if (user) {
         const { data } = await axios.get(
-          "https://ham-bubble-bot-be.onrender.com/users"
+          "/users"
         );
         const item = data.find((item: any) => item.tgid === user); // Adjust the condition if needed
         setCount(item?.mount ?? 0);
