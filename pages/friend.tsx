@@ -16,7 +16,7 @@ function Friend() {
     const fetchData = async () => {
       if (user) {
         const response = await axios.post(
-          "/friends",
+          "https://ham-bubble-bot-be.onrender.com/friends",
           {
             user,
           }

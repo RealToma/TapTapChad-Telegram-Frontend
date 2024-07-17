@@ -48,7 +48,7 @@ function Card({ title, description, price, link, img, onLoad }: CardProps) {
   const handleBonus = () => {
     setDoing(true);
     axios
-      .post("/bonus", {
+      .post("https://ham-bubble-bot-be.onrender.com/bonus", {
         user,
         title,
         price,
@@ -137,7 +137,7 @@ function Card({ title, description, price, link, img, onLoad }: CardProps) {
               <span className="mt-[61px] font-semibold text-[16px] leading-[16px] text-[#6E6E6E]">
                 Reward
               </span>
-              <span className="flex justify-center items-center space-x-[10.61px] mt-[18.5px] font-bold text-[29px] leading-[29px] text-main">
+              <span className="flex justify-center items-center space-x-[10.61px] items-center mt-[18.5px] font-bold text-[29px] leading-[29px] text-main">
                 <img
                   src="/images/ham.svg"
                   alt="dollar"
