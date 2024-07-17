@@ -48,7 +48,7 @@ function Card({ title, description, price, link, img, onLoad }: CardProps) {
   const handleBonus = () => {
     setDoing(true);
     axios
-      .post("https://ham-bubble-bot-be.onrender.com/bonus", {
+      .post("https://taptapchad-telegram-backend.onrender.com/bonus", {
         user,
         title,
         price,

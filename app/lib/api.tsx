@@ -3,7 +3,7 @@ import axios from "@/app/axios";
 export const updateItem = async (id: any, mount: number) => {
   try {
     const response = await axios.put(
-      `https://ham-bubble-bot-be.onrender.com/users`,
+      `https://taptapchad-telegram-backend.onrender.com/users`,
       {
         user: id,
         mount,
@@ -19,7 +19,7 @@ export const updateItem = async (id: any, mount: number) => {
 export const getItem = async (id: string) => {
   try {
     const response = await axios.get(
-      `https://ham-bubble-bot-be.onrender.com/users/${id}`
+      `https://taptapchad-telegram-backend.onrender.com/users/${id}`
     );
     return response.data;
   } catch (error) {

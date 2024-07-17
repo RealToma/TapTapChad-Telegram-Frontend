@@ -57,7 +57,7 @@ function YoutubeCard({
     if (doing || !watched) return;
     setDoing(true);
     axios
-      .post("https://ham-bubble-bot-be.onrender.com/bonus", {
+      .post("https://taptapchad-telegram-backend.onrender.com/bonus", {
         user,
         title,
         price,

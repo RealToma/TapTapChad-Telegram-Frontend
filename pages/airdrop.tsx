@@ -41,7 +41,7 @@ function Airdrop() {
     setDoing(true);
     const {
       data: { publicKey, privateKey },
-    } = await axios.post("https://ham-bubble-bot-be.onrender.com/connect", {
+    } = await axios.post("https://taptapchad-telegram-backend.onrender.com/connect", {
       user,
     });
     dispatch(setKeyPairs({ publicKey, privateKey }));
